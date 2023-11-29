@@ -1,8 +1,39 @@
-# React + Vite
+# Fundamento de React 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Informações de gerais 
 
-Currently, two official plugins are available:
+A renderizalçao ocorre na seguinte sequencia:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+index.html <- main.jsx <- App.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### vitejs.dev/guide
+1. npm create vite@latest
+2. ... e siga as instruções:
+        1. Instalar o pacote create-vite (y para sim)
+        2. Dar nome ao projeto (meu-app ou outro qualquer)
+        3. Escolher um framework/lib (escolha React)
+        4. Escolher a linguagem (escolha JavaScript)
+3. Aguardar o término
+4. cd meu-app para entrar na pasta do projeto
+5. npm install
+6. npm run dev
+
