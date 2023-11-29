@@ -1,48 +1,36 @@
 # Fundamento de React ,
 
 SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
-PS C:\mobile\react-fundamento> ``npm run dev``
+PS C:\mobile\react-fundamento> `npm run dev`
 
-BRANCH
+ORDEM DAS BRANCHS
+
 ## 00-projeto-resetado
+
 ## 01-componentes-jsx
 
-## Informações de gerais 
+## 02-separacao-de-componentes
+
+## Informações de gerais
 
 A renderizalçao ocorre na seguinte sequencia:
 
 index.html <- main.jsx <- App.jsx
 
- {/* shift alt A -- Comentario dentro do JSX  */}  pode ser uma chamada de função coisa de JS usa
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{/_ shift alt A -- Comentario dentro do JSX _/} pode ser uma chamada de função coisa de JS usa
 
 ### vitejs.dev/guide
+
 1. npm create vite@latest
-2. ... e siga as instruções:
-        1. Instalar o pacote create-vite (y para sim)
-        2. Dar nome ao projeto (meu-app ou outro qualquer)
-        3. Escolher um framework/lib (escolha React)
-        4. Escolher a linguagem (escolha JavaScript)
+2. ... e siga as instruções: 1. Instalar o pacote create-vite (y para sim) 2. Dar nome ao projeto (meu-app ou outro qualquer) 3. Escolher um framework/lib (escolha React) 4. Escolher a linguagem (escolha JavaScript)
 3. Aguardar o término
 4. cd meu-app para entrar na pasta do projeto
 5. npm install
 6. npm run dev
 
+### Instale REact DevTools https://react.dev/learn/react-developer-tools
+
+#### Passo a passo
+
+- crie o App.jsx crie a função function App e export default App;
+- crie em pasta componentes e nela crie conteudo exemplo -> Cabecalho - Conteudo - Rodape faça a export default dele e depois vai no arquivo App.jsx e import Cabecalho from "./components/Cabecalho";

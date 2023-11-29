@@ -1,49 +1,18 @@
+import Cabecalho from "./components/Cabecalho"; /* importando o Cabecalho */
+import Conteudo from "./components/Conteudo"; /* importando o Conteudo */
+import Rodape from "./components/Rodape"; /* importando o Rodape */
+
 //precisa começar com letra maiúscula.
 /* No começo do return tem <>   e no final um </>  é um fragmento tipo um div sem a palavra div escrita.  <fragmant> tem lugares que vai está escrito fragmant dentro <>. Para isso precisa de um import */
 function App() {
   return (
     <>
-      <header>
-        <h1>Olá Mundo React!</h1>
-        <hr />
-        <nav>
-          <a href="">Home</a>
-          <a href="">Produtos</a>
-          <a href="">Contato</a>
-        </nav>
-      </header>
+      {/* importando o Cabecalho só escrever aqui o nome que vai puxar o de cima linha 1 */}
+      <Cabecalho />
 
-      {/* shift alt A -- Comentario no meio do JSX
-             É normal ficar entre {} nessa situação */}
+      <Conteudo />
 
-      <main>
-        <section>
-          <h2>Conteúdo da aolicação</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            totam ipsam unde nobis eaque fugiat qui molestiae dolores. Quas, ad!
-          </p>
-
-          <article>
-            <h3>Artigo 1</h3>
-            <p>Conteúdo do artigo 1.....</p>
-          </article>
-
-          <article>
-            <h3>Artigo 2</h3>
-            <p>Conteúdo do artigo 2.....</p>
-          </article>
-
-          <article>
-            <h3>Artigo 3</h3>
-            <p>Conteúdo do artigo 3.....</p>
-          </article>
-        </section>
-      </main>
-
-      <footer>
-        <h2>Rodapé da aplicação</h2>
-      </footer>
+      <Rodape />
     </>
   );
 }
