@@ -13,6 +13,8 @@ A renderizalçao ocorre na seguinte sequencia:
 
 index.html <- main.jsx <- App.jsx
 
+ {/* shift alt A -- Comentario dentro do JSX  */}  pode ser uma chamada de função coisa de JS usa
+
 
 
 
