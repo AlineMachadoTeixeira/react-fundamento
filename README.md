@@ -1,7 +1,11 @@
 # Fundamento de React ,
 
+SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
+PS C:\mobile\react-fundamento> ``npm run dev``
+
 BRANCH
 ## 00-projeto-resetado
+## 01-componentes-jsx
 
 ## Informações de gerais 
 
