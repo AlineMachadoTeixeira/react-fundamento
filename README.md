@@ -1,7 +1,13 @@
 # Fundamento de React ,
 
-SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
-PS C:\mobile\react-fundamento> `npm run dev`
+- SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
+  PS C:\mobile\react-fundamento> `npm run dev`
+- cls --> limpar pasta
+- dir --> para achar pasta
+- cd --> acha arquivo um por um
+- node espaço +nome da pasta --> ver o resultado que está na pasta com console.log
+- cd.. --> volta algumas pastas ou uma pasta
+- ctrl +C --> para parar o CMD ou qualquer comando que você fez
 
 ORDEM DAS BRANCHS
 
