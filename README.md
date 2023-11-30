@@ -23,11 +23,11 @@ ORDEM DAS BRANCHS
 
 ## 04-estilos
 
-- CSS in JS
-- CSS inline
-<footer style={{ backgroundColor: "lightblue", padding: "2%" }}> /* CSS inline */      
-      <h2>Rodapé da aplicação</h2>
-</footer>
+### CSS in JS
+
+- CSS inline: aplicando via atributo style da tag usando sintaxe JS, ou seja, objeto com propriedades. No footer tem exemplo de css inline
+
+- CSS externo e global --> css global normalmente fica no main
 
 ## Informações de gerais
 

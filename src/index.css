@@ -1,0 +1,26 @@
+/* Folha de Estilos GLOBAL 
+Será usada por elementos em todos os componentes da aplicação React */
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+} /* ::after significa espaço após o conteudo da tag <p>xxxx   </p>, ::before significa espaço antes do conteudo da tag <p>    xxxx</p>*/
+
+/* Reset */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
