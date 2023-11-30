@@ -10,7 +10,7 @@ function Rodape() {
     <footer style={exemploEstilos}>
       {/* CSS inline na tag */}
       <h2 style={{ textAlign: "center" }}>Rodapé da aplicação</h2>
-      <p className="destaque-texto">Fundamentos de React</p>
+      <p className="destaque-texto  centralizar">Fundamentos de React</p>
       <p>
         {/* precisa colocar o nome className para usar class no jsx */}
         Experimentando <b className="sombra">classes</b>
