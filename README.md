@@ -25,6 +25,9 @@ ORDEM DAS BRANCHS
 
 - CSS in JS
 - CSS inline
+<footer style={{ backgroundColor: "lightblue", padding: "2%" }}> /* CSS inline */      
+      <h2>Rodapé da aplicação</h2>
+</footer>
 
 ## Informações de gerais
 
