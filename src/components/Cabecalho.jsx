@@ -1,7 +1,7 @@
 function Cabecalho() {
   return (
     <header>
-      <h1>Olá Mundo React!😉</h1>
+      <h1>Olá Mundo, React!😉</h1>
       <hr />
       <nav>
         <a href="">Home</a>

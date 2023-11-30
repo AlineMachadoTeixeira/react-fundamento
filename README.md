@@ -38,6 +38,11 @@ index.html <- main.jsx <- App.jsx
 
 ### Instale REact DevTools https://react.dev/learn/react-developer-tools
 
+`JSX` -> HTML + JS para criar componentes
+`App.jsx` (compoenete PRONCIAPLA)
+`MAIN.jsx` (Inicialização do react)
+`index.html` (elemento raiz e chamado do script)
+
 #### Passo a passo
 
 - crie o App.jsx crie a função function App e export default App;
