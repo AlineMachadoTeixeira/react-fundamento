@@ -29,6 +29,8 @@ ORDEM DAS BRANCHS
 
 - CSS externo e global --> css global normalmente fica no main
 
+-escopo de css
+
 ## Informações de gerais
 
 A renderizalçao ocorre na seguinte sequencia:
