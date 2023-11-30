@@ -2,6 +2,8 @@
 
 - SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
   PS C:\mobile\react-fundamento> `npm run dev`
+- `npm run dev -- --host 0.0.0.0 --open` Entrar direto e abre o navegador já com a pagina
+  Local: http://localhost:5173/ (navegador) ➜ Network: http://10.20.46.47:5173/(celular)
 - cls --> limpar pasta
 - dir --> para achar pasta
 - cd --> acha arquivo um por um
