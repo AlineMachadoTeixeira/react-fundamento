@@ -5,6 +5,7 @@ function Conteudo() {
     <main>
       <section>
         <h2>Conteúdo da aplicação</h2>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           totam ipsam unde nobis eaque fugiat qui molestiae dolores. Quas, ad!

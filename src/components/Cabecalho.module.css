@@ -1,0 +1,12 @@
+/* Sombra de texto */
+.sombra {
+  text-shadow: green 2px 2px 5px;
+}
+
+hr {
+  height: 4px;
+  border: none;
+  background-color: purple;
+  width: 50%;
+  margin: auto;
+}
