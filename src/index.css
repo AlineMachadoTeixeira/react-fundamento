@@ -24,3 +24,9 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Sobra para Bloco/Box */
+.sombra {
+  box-shadow: red 0 0 10px;
+  background-color: white;
+}

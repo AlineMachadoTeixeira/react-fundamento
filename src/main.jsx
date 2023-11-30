@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client"; //biblioteca react dom
 /* Importacão do primeiro/principal componentes, arquivo em que carregamos os elementos da página (como se fosse um index/home) */
 import App from "./App.jsx"; //
 
-/* Importação dos estilos global  //Arquivos que não são jsx não precisa do export */
+/* Importação dos estilos CSS global  //Arquivos que não são jsx não precisa do export */
 import "./index.css";
 
 /* Inicialização dos recursos do React, manipulando a div#root existente no index.html */
