@@ -1,4 +1,5 @@
 function Rodape() {
+  /* CSS inline com const */
   const exemploEstilos = {
     backgroundColor: "lightblue",
     padding: "2%",
@@ -7,8 +8,8 @@ function Rodape() {
   };
   return (
     <footer style={exemploEstilos}>
-      {/* CSS inline */}
-      <h2>Rodapé da aplicação</h2>
+      {/* CSS inline na tag */}
+      <h2 style={{ textAlign: "center" }}>Rodapé da aplicação</h2>
     </footer>
   );
 }
