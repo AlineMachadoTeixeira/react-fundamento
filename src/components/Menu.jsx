@@ -1,7 +1,10 @@
+import estilos from "./Menu.module.css";
 function Menu() {
   return (
-    <nav>
-      <a href="">Home</a>
+    <nav className={`${estilos["nav"]}  `}>
+      <a className={`${estilos["nav"]}  `} href="">
+        Home
+      </a>
       <a href="">Produtos</a>
       <a href="">Contato</a>
     </nav>
