@@ -19,6 +19,13 @@ ORDEM DAS BRANCHS
 
 ## 02-separacao-de-componentes
 
+## 03-subcomponentes
+
+## 04-estilos
+
+- CSS in JS
+- CSS inline
+
 ## Informações de gerais
 
 A renderizalçao ocorre na seguinte sequencia:
