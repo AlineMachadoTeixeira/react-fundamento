@@ -12,6 +12,7 @@ function Rodape() {
       <h2 style={{ textAlign: "center" }}>Rodapé da aplicação</h2>
       <p>Fundamentos de React</p>
       <p>
+        {/* precisa colocar o nome className para usar class no jsx */}
         Experimentando <b className="sombra">classes</b>
       </p>
     </footer>
