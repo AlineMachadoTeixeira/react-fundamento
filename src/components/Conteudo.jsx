@@ -12,6 +12,17 @@ const StyledConteudo = styled.main`
   p {
     padding: 0.2rem 0;
   }
+
+  @media screen and (min-width: 650px) {
+    .artigos {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .artigos article {
+      width: 32%;
+    }
+  }
 `;
 
 function Conteudo() {
@@ -26,9 +37,11 @@ function Conteudo() {
         </p>
 
         {/* Reaproveitamento de Componentes */}
-        <Artigo />
-        <Artigo />
-        <Artigo />
+        <div className="artigos">
+          <Artigo />
+          <Artigo />
+          <Artigo />
+        </div>
       </section>
     </StyledConteudo>
   );

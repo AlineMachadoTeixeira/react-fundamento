@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 const StyledArtigo = styled.article`
-  background-color: #b6b6b69b;
+  background-color: #b6b6b665;
   padding: 1rem;
   margin: 0.5rem 0;
-  /* display: flex;
-  flex-direction: column; */
   text-align: center;
 
   h3 {
     border-bottom: 1px solid #b6b6b6;
-    //width: 20%;
   }
 
   p {
     font-size: 1.1rem;
+  }
+
+  .artigos article {
+    width: 32%;
   }
 `;
 
