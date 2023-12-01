@@ -3,7 +3,7 @@
 - SE der erro e a pagina não carrega no terminal escreve npm run dev e copie o local exemplo: http://localhost:5173/
   PS C:\mobile\react-fundamento> `npm run dev`
 - `npm run dev -- --host 0.0.0.0 --open` Entrar direto e abre o navegador já com a pagina
-  Local: http://localhost:5173/ (navegador) ➜ Network: http://10.20.46.47:5173/(celular)
+  Local: http://localhost:5173/ (computador) ➜ Network: http://10.20.46.47:5173/(celular)
 - cls --> limpar pasta
 - dir --> para achar pasta
 - cd --> acha arquivo um por um
@@ -27,9 +27,9 @@ ORDEM DAS BRANCHS
 
 - CSS inline: aplicando via atributo style da tag usando sintaxe JS, ou seja, objeto com propriedades. No footer tem exemplo de css inline
 
-- CSS externo e global --> css global normalmente fica no main
+- CSS externo e global usando arquivo.css e importando no main.jsx usamos o mome index.css
 
--escopo de css
+- CSS Module: arquivo CSS especial relacionando ao componente que desejamos estilizar. Normalmente, nomeia-se o arquivo como "NomeComponente.module.css". A vantagem de usar CSS Modules é criar um escopo de estilização evitando complitos de classes com o mesmo nome.
 
 ## Informações de gerais
 
