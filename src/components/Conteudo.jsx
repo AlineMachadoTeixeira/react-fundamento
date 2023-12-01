@@ -1,8 +1,23 @@
+import styled from "styled-components"; // dica começa escrever styled que aparece
 import Artigo from "./Artigo";
+
+const StyledConteudo = styled.main`
+  width: 90vw;
+  margin: 1rem auto;
+  background-color: aliceblue;
+  padding: 1rem;
+  box-shadow: darkblue 0 0 1px inset; //inset sobra vai para dentro
+
+  h2,
+  p {
+    padding: 0.2rem 0;
+  }
+`;
 
 function Conteudo() {
   return (
-    <main>
+    //era main no lugar StyledConteudo
+    <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
         <p>
@@ -15,7 +30,7 @@ function Conteudo() {
         <Artigo />
         <Artigo />
       </section>
-    </main>
+    </StyledConteudo>
   );
 }
 
