@@ -1,6 +1,6 @@
 /* Sombra de texto */
 .sombra {
-  text-shadow: green 2px 2px 5px;
+  text-shadow: #20b2aa 2px 2px 5px;
 }
 
 hr {

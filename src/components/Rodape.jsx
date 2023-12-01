@@ -1,10 +1,10 @@
 function Rodape() {
   /* CSS inline com const */
   const exemploEstilos = {
-    backgroundColor: "lightblue",
+    backgroundColor: "#fffff0",
     padding: "2%",
-    color: "blue",
-    border: "solid 4px #f00",
+    color: "black",
+    border: "solid 4px #fffff0",
   };
   return (
     <footer style={exemploEstilos}>

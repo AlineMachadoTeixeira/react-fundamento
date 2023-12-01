@@ -1,5 +1,5 @@
 .nav {
-  background-color: #949191;
+  background-color: #333232;
   text-align: center;
   padding: 10px 0;
 }
@@ -9,9 +9,9 @@
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 nav a:hover {
-  color: green;
+  color: #20b2aa;
 }

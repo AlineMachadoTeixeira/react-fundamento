@@ -15,6 +15,7 @@ h3,
 p {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(51, 50, 50);
+  color: #333232;
 }
 
 /* Sobra para Bloco/Box */
@@ -33,7 +34,7 @@ body {
 }
 
 .destaque-texto {
-  background-color: yellow;
+  background-color: #20b2aa;
   padding: 4px;
   border-radius: 4px;
 }
@@ -51,10 +52,11 @@ h1 {
   text-align: center;
 }
 
-/* CSS para para conteudo e Artigo */
+/* CSS para para Conteudo e Artigo */
 
-main {
-  max-width: 800px;
+.main {
+  /* max-width: 800px; */
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
   background-color: #f8f8f8;
@@ -65,16 +67,8 @@ main {
 
 section {
   margin-bottom: 20px;
+  text-align: center;
 }
-
-h2 {
-  color: #333;
-}
-
-p {
-  color: #555;
-}
-
 article {
   border: 1px solid #ddd;
   padding: 10px;
@@ -82,7 +76,9 @@ article {
   background-color: #fff;
   border-radius: 5px;
 }
-
+h2 {
+  font-size: 30px;
+}
 h3 {
-  color: #007bff;
+  color: #20b2aa;
 }
