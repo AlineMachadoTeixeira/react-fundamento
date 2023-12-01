@@ -13,10 +13,6 @@ const StyledArtigo = styled.article`
   p {
     font-size: 1.1rem;
   }
-
-  .artigos article {
-    width: 32%;
-  }
 `;
 
 function Artigo() {
