@@ -33,7 +33,7 @@ ORDEM DAS BRANCHS
 
 ## 05-etyled-components (criada apartir da BRANCH 4)
 
-site --> https://styled-components.com/ e digitar o comando abaixo no terminal para instalar
+site --> https://styled-components.com/ e digite o comando abaixo de laranja no terminal para instalar /// Serve para ajuda no css ele abre um arquivo chamado package-lock.json
 
 no terminal na pasta escreva C:\mobile\react-fundamento>`npm install styled-components` para instalar styled-components
 
