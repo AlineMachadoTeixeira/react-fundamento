@@ -14,3 +14,4 @@ const StyledRodape = styled.footer`
 `;
 
 export { StyledRodape };
+//usamos no Rodape.jsx
