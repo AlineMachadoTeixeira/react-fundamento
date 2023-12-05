@@ -32,7 +32,37 @@ const StyledArtigo = styled.article`
 `;
 
 /* Definindo props para o componente */
-function Artigo(props) {
+function Artigo({ imagem, icone, titulo, descricao, data, children }) {
+  return (
+    // era article ficou StyledArtigo
+    <StyledArtigo>
+      <p>
+        <img src={imagem} alt="" />
+      </p>
+
+      <h3>
+        <span>{icone} </span>
+        {titulo}
+      </h3>
+      <p>{descricao}</p>
+      <p>
+        Lançamento:
+        <time> {data}</time>
+      </p>
+
+      {/* vem as coisas escritas entre > </Artigo> */}
+      {children}
+    </StyledArtigo>
+  );
+}
+
+export default Artigo;
+//Exporte ele para Conteudo.jsx
+
+//Artigo é o componente filho do conteudo
+
+//era assim e ficou como acima
+/* function Artigo(props) {
   return (
     // era article ficou StyledArtigo
     <StyledArtigo>
@@ -50,13 +80,6 @@ function Artigo(props) {
         <time> {props.data}</time>
       </p>
 
-      {/* vem as coisas escritas entre > </Artigo> */}
-      {props.children}
-    </StyledArtigo>
-  );
-}
-
-export default Artigo;
-//Exporte ele para Conteudo.jsx
-
-//Artigo é o componente filho do conteudo
+      {/* vem as coisas escritas entre > </Artigo> */
+//   {props.children}
+// /StyledArtigo>
