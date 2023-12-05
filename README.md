@@ -37,6 +37,12 @@ site --> https://styled-components.com/ e digite o comando abaixo de laranja no 
 
 No terminal na pasta escreva C:\mobile\react-fundamento>`npm install styled-components` para instalar styled-components
 
+## 06-props (propriedades)
+
+São parâmetros/argumentos com valores/expressões passados para os componentes Reacts, normalmente usados para injeção de dados dinâmicos. As `props` funcionam como objetos, e cada `prop` criada por você passar a ter propriedades deste objeto.
+
+As `props` são criadas manualmente, embora também exista um `prop` especial chamada `children` que permite ler/transmitir o conteúdo que fica entre as tags de abertura/fechamento de um componente.
+
 ## Informações de gerais
 
 A renderizalçao ocorre na seguinte sequencia:
