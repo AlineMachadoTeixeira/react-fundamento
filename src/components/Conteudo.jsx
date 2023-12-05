@@ -26,6 +26,8 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const lancamentos = ["1980", "1970", "1960"];
+
   return (
     //era main no lugar StyledConteudo
     <StyledConteudo>
@@ -39,16 +41,22 @@ function Conteudo() {
         {/* Reaproveitamento de Componentes */}
         <div className="artigos">
           <Artigo
+            icone="💍"
             titulo="Senhor dos Anéis"
             descricao="livro criado por tokien"
+            data={lancamentos[0]}
           />
           <Artigo
+            icone="👑"
             titulo="Game Of Thrones"
             descricao="Aventura maluca com gente sempre morrendo"
+            data={lancamentos[1]}
           />
           <Artigo
+            icone="📖"
             titulo="HTML e CSS"
             descricao="Fonte de estudos para quem quer começar no Front-End"
+            data={lancamentos[2]}
           />
         </div>
       </section>
