@@ -13,6 +13,22 @@ const StyledArtigo = styled.article`
   p {
     font-size: 1.1rem;
   }
+
+  h4 {
+    text-align: left;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  ol {
+    text-align: left;
+  }
+
+  details {
+    text-align: left;
+  }
 `;
 
 /* Definindo props para o componente */
@@ -33,6 +49,9 @@ function Artigo(props) {
         Lançamento:
         <time> {props.data}</time>
       </p>
+
+      {/* vem as coisas escritas entre > </Artigo> */}
+      {props.children}
     </StyledArtigo>
   );
 }

@@ -54,7 +54,7 @@ function Conteudo() {
             descricao="livro criado por tokien"
             data={lancamentos[0]}
           >
-            <h4>Volumes</h4>
+            <h4>Volumes:</h4>
             <ul>
               <li>A Sociedade do Anél</li>
               <li>As Duas Torres</li>
@@ -69,7 +69,7 @@ function Conteudo() {
             descricao="Aventura maluca com gente sempre morrendo"
             data={lancamentos[1]}
           >
-            <h4>Defubtos do livro</h4>
+            <h4>Defuntos do livro:</h4>
             <ol>
               <li>Aquele cara Stark</li>
               <li>Outra pessoa importante</li>
@@ -85,7 +85,7 @@ function Conteudo() {
             data={lancamentos[2]}
           >
             <section>
-              <h4>Assuntos</h4>
+              <h4>Assuntos:</h4>
               <details>
                 <summary>Estrutura</summary>
                 <p>HTML 5 para estruturar e etc...</p>
