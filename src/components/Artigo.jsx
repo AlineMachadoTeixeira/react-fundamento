@@ -15,15 +15,18 @@ const StyledArtigo = styled.article`
   }
 `;
 
-function Artigo() {
+/* Definindo props para o componente */
+function Artigo(props) {
   return (
     // era article ficou StyledArtigo
     <StyledArtigo>
-      <h3>Artigo 1</h3>
-      <p>Conteúdo do artigo 1.....</p>
+      <h3>{props.titulo}</h3>
+      <p>{props.descricao}</p>
     </StyledArtigo>
   );
 }
 
 export default Artigo;
 //Exporte ele para Conteudo.jsx
+
+//Artigo é o componente filho do conteudo

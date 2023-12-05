@@ -38,9 +38,18 @@ function Conteudo() {
 
         {/* Reaproveitamento de Componentes */}
         <div className="artigos">
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo
+            titulo="Senhor dos Anéis"
+            descricao="livro criado por tokien"
+          />
+          <Artigo
+            titulo="Game Of Thrones"
+            descricao="Aventura maluca com gente sempre morrendo"
+          />
+          <Artigo
+            titulo="HTML e CSS"
+            descricao="Fonte de estudos para quem quer começar no Front-End"
+          />
         </div>
       </section>
     </StyledConteudo>
@@ -49,3 +58,5 @@ function Conteudo() {
 
 export default Conteudo;
 //Exporte ele para App.jsx
+
+//Conteudo é o componente pai do artigo
