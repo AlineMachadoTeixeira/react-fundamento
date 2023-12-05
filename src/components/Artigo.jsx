@@ -61,7 +61,7 @@ export default Artigo;
 
 //Artigo é o componente filho do conteudo
 
-//era assim e ficou como acima
+//era assim e ficou como acima o de cima tiramos a palavra props
 /* function Artigo(props) {
   return (
     // era article ficou StyledArtigo
@@ -83,3 +83,4 @@ export default Artigo;
       {/* vem as coisas escritas entre > </Artigo> */
 //   {props.children}
 // /StyledArtigo>
+//}
