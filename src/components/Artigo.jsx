@@ -20,8 +20,14 @@ function Artigo(props) {
   return (
     // era article ficou StyledArtigo
     <StyledArtigo>
-      <span>{props.icone}</span>
-      <h3>{props.titulo}</h3>
+      <p>
+        <img src={props.imagem} alt="" />
+      </p>
+
+      <h3>
+        <span>{props.icone} </span>
+        {props.titulo}
+      </h3>
       <p>{props.descricao}</p>
       <p>
         Lançamento:

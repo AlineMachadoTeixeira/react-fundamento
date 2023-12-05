@@ -1,6 +1,12 @@
 import styled from "styled-components"; // dica começa escrever styled que aparece
 import Artigo from "./Artigo";
 
+/* importando os assets de imagem  */
+import imagem1 from "../assets/abra-o-livro.png";
+import imagem2 from "../assets/livro-magico.png";
+import imagem3 from "../assets/pilha-de-livros.png";
+//puxamos essas imagem nos artigo linhas 51, 58, 65
+
 const StyledConteudo = styled.main`
   width: 90vw;
   margin: 1rem auto;
@@ -33,6 +39,7 @@ function Conteudo() {
     <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           totam ipsam unde nobis eaque fugiat qui molestiae dolores. Quas, ad!
@@ -41,18 +48,21 @@ function Conteudo() {
         {/* Reaproveitamento de Componentes */}
         <div className="artigos">
           <Artigo
+            imagem={imagem1}
             icone="💍"
             titulo="Senhor dos Anéis"
             descricao="livro criado por tokien"
             data={lancamentos[0]}
           />
           <Artigo
+            imagem={imagem2}
             icone="👑"
             titulo="Game Of Thrones"
             descricao="Aventura maluca com gente sempre morrendo"
             data={lancamentos[1]}
           />
           <Artigo
+            imagem={imagem3}
             icone="📖"
             titulo="HTML e CSS"
             descricao="Fonte de estudos para quem quer começar no Front-End"
