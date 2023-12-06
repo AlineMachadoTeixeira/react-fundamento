@@ -27,10 +27,15 @@ function Cabecalho() {
   No caso do useState, usando desestruturação, criamos uma variável que representa o valor do state (titulo) e uma função responsavel por atualizar o states (setTitulo)*/
   const [titulo, setTitulo] = useState("Olá Mundo, React!😉");
 
+  const mudarTitulo = () => {
+    /* Alterando o valor do states 'titulo' através do 'setTitulo' quando ocorre de clique no h1  */
+    setTitulo("Olá React!😎");
+  };
   return (
     /* trocamos o header  por StyledCabecalho*/
     <StyledCabecalho>
-      <h1>{titulo}</h1> {/* antes era assim  <h1>Olá Mundo, React!😉</h1> */}
+      <h1 onClick={mudarTitulo}>{titulo}</h1>{" "}
+      {/* antes era assim  <h1>Olá Mundo, React!😉</h1> */}
       <hr />
       <Menu />
     </StyledCabecalho>
