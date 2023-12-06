@@ -49,8 +49,8 @@ function Conteudo() {
     alert("Exemplo 2");
   };
 
-  const exemplo3 = () => {
-    alert("Exemplo 3");
+  const exemplo3 = (valor) => {
+    alert(`Exemplo 3 ${valor}`);
   };
 
   return (
@@ -75,6 +75,12 @@ function Conteudo() {
         <div className="artigos">
           {cursos.map((curso) => (
             <Artigo
+              //handleClick={}  é a mesma coisa que aoClicar é um evento dar um nome significativo.
+
+              /* É necessário criar uma prop para passar a chamada/referência da função do componente pai*/
+              aoClicar={() => {
+                exemplo3(curso.categoria);
+              }}
               key={curso.id} // para tirar o erro do console, mas não vai aparecer na tela. Só se você chamar no Artigo.jsx
               categoria={curso.categoria}
               titulo={curso.titulo}

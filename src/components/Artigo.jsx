@@ -16,7 +16,7 @@ const StyledArtigo = styled.article`
 `;
 
 /* Definindo props para o componente */
-function Artigo({ titulo, categoria, preco }) {
+function Artigo({ titulo, categoria, preco, aoClicar }) {
   const formatadoReal = preco.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -24,7 +24,8 @@ function Artigo({ titulo, categoria, preco }) {
   return (
     // era article ficou StyledArtigo
     <StyledArtigo>
-      <h3>{categoria}</h3>
+      {/* O componente filho (Artigo) recebe através da prop 'aoClicar' a referência à função exemplo 3 existente no componente pai (Conteudo) */}
+      <h3 onClick={aoClicar}> {categoria}</h3>
       <p>
         <b>Cursos: </b>
         {titulo}
