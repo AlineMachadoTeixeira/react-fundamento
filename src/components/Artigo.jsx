@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const StyledArtigo = styled.article`
-  //background-color: #9b9999;
+  //background-color: lightgrey;
   padding: 1rem;
   margin: 0.5rem 0;
   text-align: center;
@@ -23,10 +23,10 @@ function Artigo({ titulo, categoria, preco }) {
     currency: "BRL",
   }); // era o preco da linha 29 ficou formatadoReal, pois usamos uma função para formatar o preço
 
-  const [cor, setCor] = useState("gray"); //Só escrever useState para fazer o import linha 1 depois o resto
+  const [cor, setCor] = useState("lightgrey"); //Só escrever useState para fazer o import linha 1 depois o resto
 
   const mudarCor = () => {
-    setCor(cor == "gray" ? "pink" : "gray");
+    setCor(cor == "lightgrey" ? "pink" : "lightgrey");
   };
 
   //var variavel = condicao ? valorSeTrue : valorSeFalse;
