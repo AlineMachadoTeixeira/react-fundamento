@@ -22,10 +22,11 @@ const StyledConteudo = styled.main`
     border: none; /* Remover a borda padrão do botão */
     border-radius: 5px; /* Borda arredondada */
     cursor: pointer; /* Alterar o cursor ao passar sobre o botão */
+    margin-top: 10px;
   }
 
   button:hover {
-    background-color: #45a049; /* Cor de fundo mais escura no hover */
+    background-color: yellow; /* Cor de fundo mais escura no hover */
   }
 
   @media screen and (min-width: 650px) {
@@ -48,6 +49,10 @@ function Conteudo() {
     alert("Exemplo 2");
   };
 
+  const exemplo3 = () => {
+    alert("Exemplo 3");
+  };
+
   return (
     //era main no lugar StyledConteudo
     <StyledConteudo>
@@ -55,6 +60,12 @@ function Conteudo() {
         <h2>Conteúdo da aplicação</h2>
 
         <button onClick={exemplo2}>Exemplo 2</button>
+
+        <br />
+
+        <button onClick={exemplo3}>
+          Exemplo 3 (Acionando o evento/função através do conteudo [pai] )
+        </button>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
