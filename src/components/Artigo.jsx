@@ -33,7 +33,7 @@ function Artigo({ titulo, categoria, preco }) {
 
   return (
     // era article ficou StyledArtigo
-    <StyledArtigo onClick={mudarCor} style={{ background: cor }}>
+    <StyledArtigo onClick={mudarCor} style={{ backgroundColor: cor }}>
       <h3>{categoria}</h3>
       <p>
         <b>Cursos: </b>
