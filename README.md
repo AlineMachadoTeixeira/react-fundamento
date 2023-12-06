@@ -43,6 +43,24 @@ São parâmetros/argumentos com valores/expressões passados para os componentes
 
 As `props` são criadas manualmente, embora também exista um `prop` especial chamada `children` que permite ler/transmitir o conteúdo que fica entre as tags de abertura/fechamento de um componente.
 
+## 07 desafio props
+
+## 08 eventos
+
+## 09-gerenciamento-de-estados-dos-componentes (criada apartir da BRANCH 7)
+
+`Estado` ou `State` é uma propriedade especial de um componente que pode ser alterada ao longo do tempo. Por exemplo, um componente que exibe um contador de **likes** precisa de um gerenciamento de `states` para controlar a quantidade de **likes** recebidos.
+O uso `states` permite ao React reagir às mudanças de renderização dos componentes.
+
+### Exemplos de mudanças que podem ser gerenciadas por states
+
+- Captura de dados de formulário
+- Visibilidade de componentes
+- filtros e buscas de dados
+- Contadores
+- Temas/estilos
+- Pontuação/vida de um jogador num jogo
+
 ## Informações de gerais
 
 A renderizalçao ocorre na seguinte sequencia:
