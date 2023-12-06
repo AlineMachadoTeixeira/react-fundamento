@@ -25,16 +25,19 @@ function Cabecalho() {
   Aqui definimos a chamada de uma função especial do React: "useState". Esta e outras funções iniciadas com o prefixo 'use' são conhecidas como React Hooks.
   
   No caso do useState, usando desestruturação, criamos uma variável que representa o valor do state (titulo) e uma função responsavel por atualizar o states (setTitulo)*/
-  const [titulo, setTitulo] = useState("Olá Mundo, React!😉");
+  const [titulo, setTitulo] = useState("Olá Mundo, React!😉"); //Só escrever useState para fazer o import linha 1 depois o resto
 
   const mudarTitulo = () => {
     /* Alterando o valor do states 'titulo' através do 'setTitulo' quando ocorre de clique no h1  */
-    setTitulo("Olá React!😎");
+    //setTitulo("Olá React!😎");
+    setTitulo(
+      titulo == "Olá Mundo, React!😉" ? "Olá React!😎" : "Olá Mundo, React!😉"
+    );
   };
   return (
     /* trocamos o header  por StyledCabecalho*/
     <StyledCabecalho>
-      <h1 onClick={mudarTitulo}>{titulo}</h1>{" "}
+      <h1 onClick={mudarTitulo}>{titulo}</h1>
       {/* antes era assim  <h1>Olá Mundo, React!😉</h1> */}
       <hr />
       <Menu />
