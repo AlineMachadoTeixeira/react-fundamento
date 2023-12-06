@@ -26,9 +26,8 @@ function Artigo({ titulo, categoria, preco }) {
   const [cor, setCor] = useState("lightgrey"); //Só escrever useState para fazer o import linha 1 depois o resto
 
   const mudarCor = () => {
-    setCor(cor == "lightgrey" ? "pink" : "lightgrey");
+    setCor(cor == "lightgrey" ? "pink" : "lightgrey"); // se for lightgrey troque(?) para "pink" caso contrario(:) deixe "lightgrey"
   };
-
   //var variavel = condicao ? valorSeTrue : valorSeFalse;
 
   return (
