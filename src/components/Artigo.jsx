@@ -25,8 +25,14 @@ function Artigo({ titulo, categoria, preco }) {
     // era article ficou StyledArtigo
     <StyledArtigo>
       <h3>{categoria}</h3>
-      <p>{titulo}</p>
-      <p>{formatadoReal}</p>
+      <p>
+        <b>Cursos: </b>
+        {titulo}
+      </p>
+      <p>
+        <b>Preço: </b>
+        {formatadoReal}
+      </p>
     </StyledArtigo>
   );
 }
