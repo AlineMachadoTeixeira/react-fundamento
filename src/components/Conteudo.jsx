@@ -14,6 +14,13 @@ const StyledConteudo = styled.main`
     padding: 0.2rem 0;
   }
 
+  .filtros {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+  }
+
   @media screen and (min-width: 650px) {
     .artigos {
       display: flex;
@@ -29,16 +36,29 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const aplicarFiltro = (event) => {
+    console.log(event.currentTarget.innerText);
+  };
   return (
     //era main no lugar StyledConteudo
     <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
 
-        <p>
+        <p className="filtros">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           totam ipsam unde nobis eaque fugiat qui molestiae dolores. Quas, ad!
         </p>
+
+        <div className="filtros">
+          <p>
+            <b>
+              filtra por: <button onClick={aplicarFiltro}>Front-End</button>
+              filtra por: <button onClick={aplicarFiltro}>Back-End</button>
+              filtra por: <button onClick={aplicarFiltro}>Design</button>
+            </b>
+          </p>
+        </div>
 
         <div className="artigos">
           {cursos.map((curso) => (
