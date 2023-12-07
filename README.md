@@ -54,6 +54,18 @@ O uso `states` permite ao React reagir às mudanças de renderização dos compo
 
 ## 10-filtros-usando-eventos-e-states
 
+## 11-navegação-usando-rotas
+
+O React suporta a navegação/links como Single Page Application (SPA) usando uma biblioteca adicional chamada **React Router DOM**
+
+Portanto, é necessário instalar esta dependência: para instalar digite no terminal :
+
+`npm install react-router-dom`
+
+OBS: na pasta package.json na parte dependencies aparece as intalações feitas
+
+depois foi no App.jsx criamos uma pasta pages
+
 ### Exemplos de mudanças que podem ser gerenciadas por states
 
 - Captura de dados de formulário
