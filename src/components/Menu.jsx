@@ -1,4 +1,5 @@
 import styled from "styled-components"; // dica começa escrever styled que aparece
+import { NavLink } from "react-router-dom";
 
 const StyledMenu = styled.nav`
   height: 50px;
@@ -29,9 +30,9 @@ function Menu() {
   return (
     //era nav no lugar do StyledMenu
     <StyledMenu>
-      <a href="/">Home</a>
-      <a href="/produtos">Produtos</a>
-      <a href="/contato">Contato</a>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/produtos">Produtos</NavLink>
+      <NavLink to="/contato">Contato</NavLink>
     </StyledMenu>
   );
 }
