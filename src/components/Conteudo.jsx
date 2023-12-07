@@ -1,6 +1,7 @@
 import styled from "styled-components"; // dica começa escrever styled que aparece
 import Artigo from "./Artigo";
 import cursos from "../api/cursos.js"; // importação da api de mentirinha
+import { useState } from "react";
 
 const StyledConteudo = styled.main`
   width: 90vw;
@@ -21,6 +22,10 @@ const StyledConteudo = styled.main`
     border-bottom: solid 2px;
   }
 
+  .filtros button {
+    margin: 0.5rem;
+  }
+
   @media screen and (min-width: 650px) {
     .artigos {
       display: flex;
@@ -36,8 +41,15 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  /* Criando um gerenciador de state para mudança/filtro de categorias. Inicialmente, começa como null pois ainda não temos um escolha/seleção de categoria (aparece tudo) */
+  const [categoria, setCategoria] = useState(null); //Digite useState  para aparecer a importação na linha 6
+
   const aplicarFiltro = (event) => {
-    console.log(event.currentTarget.innerText);
+    //capturamos (após o clique) o texto escrito em cada botão
+    const categoriaEscolhida = event.currentTarget.innerText;
+
+    //E em seguida passamos este texto para o state de categoria.
+    setCategoria(categoriaEscolhida);
   };
   return (
     //era main no lugar StyledConteudo
@@ -53,11 +65,22 @@ function Conteudo() {
         <div className="filtros">
           <p>
             <b>
-              filtra por: <button onClick={aplicarFiltro}>Front-End</button>
-              filtra por: <button onClick={aplicarFiltro}>Back-End</button>
-              filtra por: <button onClick={aplicarFiltro}>Design</button>
+              Filtra por: <button onClick={aplicarFiltro}>Front-End</button>
+              <button onClick={aplicarFiltro}>Back-End</button>
+              <button onClick={aplicarFiltro}>Design</button>
             </b>
           </p>
+
+          {/* Renderização Condicional
+          O texto/tag/componente somente será renderizado/exibido se o state categoria existir (ou seja, não é null, undefined, false) */}
+          {
+            categoria && (
+              <p>
+                Você escolheu: <b>{categoria}</b>
+              </p>
+            )
+            /* e tipo isso o de cima:  if (categoria != null)  mostre texo do paragrafo */
+          }
         </div>
 
         <div className="artigos">
