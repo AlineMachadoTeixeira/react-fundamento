@@ -111,8 +111,15 @@ function Conteudo() {
           }
 
           <p>
-            Quantidade de cursos: <b>{quantidade}</b>
+            Quantidade de cursos: <b> {quantidade}</b>
           </p>
+
+          {/* Se quantidade for zero (ou seja, não tem cursos da categoria filtrada). então mostre a mensagem */}
+          {quantidade === 0 && (
+            <p style={{ color: "red", textAlign: "center" }}>
+              Não há cursos desta categoria!
+            </p>
+          )}
         </div>
 
         <div className="artigos">
