@@ -51,6 +51,25 @@ function Conteudo() {
     //E em seguida passamos este texto para o state de categoria.
     setCategoria(categoriaEscolhida);
   };
+
+  /* exercicio fazer limpa as todas as categorias linha 89*/
+  // const limparFiltro = () => {
+  //   setCategoria(null);
+  // };
+
+  /* Gerando um novo array de cursos filtrados */
+  const cursosFiltrados = cursos.filter((curso) => {
+    /* Se o state categoria for igual a uma 
+    das categorias dos cursos, então será retornada
+    a lista de cursos daquela categoria. Senão, será 
+    retornada lista completa devido ao state ser null (ou seja,
+    não há uma categoria para filtrar) */
+    return curso.categoria === categoria || categoria === null; // categoria variavel do useState linha 45
+  });
+
+  /* Guardando a quantidade de cursos filtrados linha 114 */
+  const quantidade = cursosFiltrados.length;
+
   return (
     //era main no lugar StyledConteudo
     <StyledConteudo>
@@ -68,6 +87,15 @@ function Conteudo() {
               Filtra por: <button onClick={aplicarFiltro}>Front-End</button>
               <button onClick={aplicarFiltro}>Back-End</button>
               <button onClick={aplicarFiltro}>Design</button>
+              <button onClick={aplicarFiltro}>Mobile</button>
+              <button onClick={aplicarFiltro}>CSS</button>
+              {/* exercicio fazer limpa as todas as categorias*/}
+              {/* <button onClick={limparFiltro}>🧹 Limpar Filtro</button>   função linha 56   outra forma de fazer */}
+              {categoria && (
+                <button onClick={() => setCategoria(null)}>
+                  🧹 Limpar Filtro
+                </button>
+              )}
             </b>
           </p>
 
@@ -81,10 +109,15 @@ function Conteudo() {
             )
             /* e tipo isso o de cima:  if (categoria != null)  mostre texo do paragrafo */
           }
+
+          <p>
+            Quantidade de cursos: <b>{quantidade}</b>
+          </p>
         </div>
 
         <div className="artigos">
-          {cursos.map((curso) => (
+          {/* antes era cursos.map((curso) trocamos para cursosFiltrados.map((curso) da const linha 56 */}
+          {cursosFiltrados.map((curso) => (
             <Artigo
               key={curso.id} // para tirar o erro do console, mas não vai aparecer na tela. Só se você chamar no Artigo.jsx
               categoria={curso.categoria}
