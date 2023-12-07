@@ -1,9 +1,9 @@
 import styled from "styled-components"; // dica começa escrever styled que aparece
-import Artigo from "./Artigo";
+import Artigo from "./Artigo.jsx";
 import cursos from "../api/cursos.js"; // importação da api de mentirinha
 import { useState } from "react";
 
-const StyledConteudo = styled.main`
+const StyledCursos = styled.section`
   .filtros {
     margin: 1rem 0;
     padding: 1rem 0;
@@ -29,7 +29,7 @@ const StyledConteudo = styled.main`
   }
 `;
 
-function Conteudo() {
+function Cursos() {
   /* Criando um gerenciador de state para mudança/filtro de categorias. Inicialmente, começa como null pois ainda não temos um escolha/seleção de categoria (aparece tudo) */
   const [categoria, setCategoria] = useState(null); //Digite useState  para aparecer a importação na linha 6
 
@@ -60,8 +60,8 @@ function Conteudo() {
   const quantidade = cursosFiltrados.length;
 
   return (
-    //era main no lugar StyledConteudo
-    <StyledConteudo>
+    //era main no lugar StyledCursos
+    <StyledCursos>
       <section>
         <h2>Conteúdo da aplicação</h2>
 
@@ -123,11 +123,11 @@ function Conteudo() {
           ))}
         </div>
       </section>
-    </StyledConteudo>
+    </StyledCursos>
   );
 }
 
-export default Conteudo;
+export default Cursos;
 //Exporte ele para App.jsx
 
 //Conteudo é o componente pai do artigo
