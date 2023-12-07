@@ -52,6 +52,8 @@ As `props` são criadas manualmente, embora também exista um `prop` especial ch
 `Estado` ou `State` é uma propriedade especial de um componente que pode ser alterada ao longo do tempo. Por exemplo, um componente que exibe um contador de **likes** precisa de um gerenciamento de `states` para controlar a quantidade de **likes** recebidos.
 O uso `states` permite ao React reagir às mudanças de renderização dos componentes.
 
+## 10-filtros-usando-eventos-e-states
+
 ### Exemplos de mudanças que podem ser gerenciadas por states
 
 - Captura de dados de formulário
