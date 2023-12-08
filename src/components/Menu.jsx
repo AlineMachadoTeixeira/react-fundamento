@@ -24,6 +24,12 @@ const StyledMenu = styled.nav`
       transform: scale(1.05);
     }
   }
+
+  .active {
+    /* active para deixar o menu com cor diferente para sabe em qual pagina você clicou */
+    background-color: white;
+    color: black;
+  }
 `;
 
 function Menu() {
