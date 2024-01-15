@@ -14,7 +14,7 @@ function Produtos() {
   Obs.: o [] indica que o useEffect não tem dependencia adicionais e que será executado somente UMA VEZ
 
   2) Em seguida, ele executa a função carregarDados
-  
+
   3) Ao término dela, atualiza o state (produtos)
   
   */
@@ -33,7 +33,21 @@ function Produtos() {
     carregarDados();
   }, []);
 
-  return <h2>Produtos</h2>;
+  return (
+    <article>
+      <h2>Produtos</h2>
+
+      {produtos.map((produto) => {
+        return (
+          <section key={produto.id}>
+            <h3>{produto.title}</h3>
+            <p>Preço: {produto.price}</p>
+            <p>{produto.description}</p>
+          </section>
+        );
+      })}
+    </article>
+  );
 }
 
 export default Produtos;
