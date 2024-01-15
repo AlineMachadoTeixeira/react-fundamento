@@ -110,3 +110,4 @@ index.html <- main.jsx <- App.jsx
 
 - useState()
 - useEffect()
+  loading de dados
