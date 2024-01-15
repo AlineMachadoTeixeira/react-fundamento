@@ -56,6 +56,8 @@ O uso `states` permite ao React reagir às mudanças de renderização dos compo
 
 ## 11-navegação-usando-rotas
 
+## 12-gerenciamento-de-efeitos-colaterais
+
 O React suporta a navegação/links como Single Page Application (SPA) usando uma biblioteca adicional chamada **React Router DOM**
 
 Portanto, é necessário instalar esta dependência: para instalar digite no terminal :
