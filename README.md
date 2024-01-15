@@ -103,3 +103,8 @@ index.html <- main.jsx <- App.jsx
 
 - crie o App.jsx crie a função function App e export default App;
 - crie em pasta componentes e nela crie conteudo exemplo -> Cabecalho - Conteudo - Rodape faça a export default dele e depois vai no arquivo App.jsx e import Cabecalho from "./components/Cabecalho";
+
+#### REACT HOOK
+
+- useState()
+- useEffect()
