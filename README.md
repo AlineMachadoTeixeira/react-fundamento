@@ -54,9 +54,13 @@ O uso `states` permite ao React reagir às mudanças de renderização dos compo
 
 ## 10-filtros-usando-eventos-e-states
 
-## 11-navegação-usando-rotas
-
 ## 12-gerenciamento-de-efeitos-colaterais
+
+`Efeitos Colaterais` no React são operacões que não tem ligação direta com a renderização do componente, como por exemplo, solicitações de API e manipulação de eventos.
+
+Usamos o **hook** `useEffect` para garantir que esses efeitos colaterais ocorram no momento adequado do ciclo de vida do componente, evitando execuções repetitivas e problemas de carregamento e desempenho.
+
+## 11-navegação-usando-rotas
 
 O React suporta a navegação/links como Single Page Application (SPA) usando uma biblioteca adicional chamada **React Router DOM**
 
