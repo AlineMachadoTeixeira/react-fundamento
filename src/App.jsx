@@ -7,6 +7,7 @@ import Container from "./components/Container"; /* importando o Container*/
 
 /* Importação de recursos/com */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetalhesProduto from "./pages/DetalhesProduto"; /* importando do pages - DetalhesProduto.jsx */
 
 //precisa começar com letra maiúscula.
 /* No começo do return tem <>   e no final um  </>  é um fragmento tipo um div sem a palavra div escrita.  <fragmant> tem lugares que vai está escrito fragmant dentro <>. Para isso precisa de um import */
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route Component={Home} exact path="/" />
             <Route Component={Produtos} exact path="/produtos" />
+            <Route Component={DetalhesProduto} path="/produtos/:id" />
             <Route Component={Contato} exact path="/contato" />
           </Routes>
         </Container>
