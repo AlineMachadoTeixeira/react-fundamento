@@ -1,7 +1,7 @@
 import { useEffect } from "react"; //importação da linha 11 useEffect();. Primeiro escreve useEffect(). O da linha 10 que puxa
 import { useState } from "react"; // importação da linha 7 useState();. Primeiro escreve useState. O da linha 7 que puxa aqui.
 
-import imagemLoading from "../assets/loading.svg";
+import Loading from "../components/Loading"; //importando componenete Loading.jsx
 import { Link } from "react-router-dom";
 
 function Produtos() {
@@ -45,9 +45,10 @@ function Produtos() {
       <h2>Produtos</h2>
 
       {loading ? (
-        <p style={{ textAlign: "center" }}>
-          <img src={imagemLoading} alt="Carregando..." />
-        </p>
+        // <p style={{ textAlign: "center" }}>
+        //   <img src={imagemLoading} alt="Carregando..." />
+        // </p> Antes era assim, mas importamos do Loading.jsx e ficou o de baixo
+        <Loading />
       ) : (
         produtos.map((produto) => {
           return (
