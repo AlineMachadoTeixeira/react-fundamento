@@ -2,6 +2,7 @@ import { useEffect } from "react"; //importação da linha 11 useEffect();. Prim
 import { useState } from "react"; // importação da linha 7 useState();. Primeiro escreve useState. O da linha 7 que puxa aqui.
 
 import imagemLoading from "../assets/loading.svg";
+import { Link } from "react-router-dom";
 
 function Produtos() {
   /* O state "produtos" é inicializado como array vazio. Posteriomente (após o carregamento dos dados da API), ele será preenchido com os objetos/produtos */
@@ -54,6 +55,9 @@ function Produtos() {
               <h3>{produto.title}</h3>
               <p>Preço: {produto.price}</p>
               <p>{produto.description}</p>
+              <p>
+                <Link to={`/produtos/${produto.id}`}>Ver detalhes</Link>
+              </p>
             </section>
           );
         })
