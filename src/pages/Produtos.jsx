@@ -1,6 +1,8 @@
 import { useEffect } from "react"; //importação da linha 11 useEffect();. Primeiro escreve useEffect(). O da linha 10 que puxa
 import { useState } from "react"; // importação da linha 7 useState();. Primeiro escreve useState. O da linha 7 que puxa aqui.
 
+import imagemLoading from "../assets/loading.svg";
+
 function Produtos() {
   /* O state "produtos" é inicializado como array vazio. Posteriomente (após o carregamento dos dados da API), ele será preenchido com os objetos/produtos */
 
@@ -42,7 +44,9 @@ function Produtos() {
       <h2>Produtos</h2>
 
       {loading ? (
-        <p>Carregando...</p>
+        <p style={{ textAlign: "center" }}>
+          <img src={imagemLoading} alt="Carregando..." />
+        </p>
       ) : (
         produtos.map((produto) => {
           return (
